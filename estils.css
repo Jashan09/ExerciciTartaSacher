@@ -1,0 +1,14 @@
+div{
+    width: 10%;
+    background-color: saddlebrown;
+}
+
+.n{
+    display: inline-block;
+    border-style: solid;
+}
+
+.m{
+    display: block;
+    border-style: solid;
+}
