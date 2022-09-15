@@ -41,29 +41,27 @@ function crearRajolaDeXocolata(){
 
 
         let paragrafFinal = finestraPare.document.getElementById("paragrafDeLaFinestraPare");
-        paragrafFinal.innerText = textProva;
-
-
-
-        /*
-
-n 2
-m 4
-r 10
-
- */
 
 
         let pecesEnUnaSolaXocolata = coordenadaX*coordenadaY;
 
+        let boolProva = pecesEnUnaSolaXocolata;
 
 
         do{
             textProva += "\n";
-            textProva += "\n";
             textProva += xocolataFinal;
             paragrafFinal.innerText += textProva;
-        }while(totalPecesDemanades>pecesEnUnaSolaXocolata);
+            boolProva += pecesEnUnaSolaXocolata;
+        }while(totalPecesDemanades>boolProva);
+
+        console.log('arriba');
+
+        console.log(textProva);
+
+
+
+
 
 
 
