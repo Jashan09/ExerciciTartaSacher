@@ -57,10 +57,6 @@ function crearRajolaDeXocolata(){
 
 
         if(totalPecesDemanades>boolProva){
-
-
-            //9 9 9
-
         do{
             textProva += "\n";
             textProva += xocolataFinal;
@@ -68,8 +64,8 @@ function crearRajolaDeXocolata(){
             boolProva += pecesEnUnaSolaXocolata;
             console.log("Entra");
         }while(totalPecesDemanades>boolProva);
-
         }
+
 
 
         console.log("final")
@@ -85,8 +81,15 @@ function crearRajolaDeXocolata(){
             + " peces amb rajoles de " + coordenadaX + "x" + coordenadaY + " (" + pecesEnUnaSolaXocolata + " peces en una sola rajola)";
 
 
+        let text1 = "Peces demanades: " + totalPecesDemanades + " | Rajoles del tipus: " + coordenadaY + "x" + coordenadaX;
+        let text2 = "Peces que sobren: ";
+
+
+
 
         console.log("final2")
+        console.log(textProva);
+
         console.log(xocolataFinal);
 
 
