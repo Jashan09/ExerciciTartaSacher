@@ -41,6 +41,8 @@ function crearRajolaDeXocolata(){
 
 
         let paragrafFinal = finestraPare.document.getElementById("paragrafDeLaFinestraPare");
+        paragrafFinal.innerText = "";
+
 
 
         let pecesEnUnaSolaXocolata = coordenadaX*coordenadaY;
@@ -63,12 +65,15 @@ function crearRajolaDeXocolata(){
         let pecesQueSobren = totalPecesDemanades-pecesEnUnaSolaXocolata;
 
         let textInfo = finestraPare.document.getElementById("textInfo");
+        textInfo.innerText = "";
+
+
         textInfo.innerText += "Vols " + totalPecesDemanades
             + " peces amb rajoles de " + coordenadaX + "x" + coordenadaY;
 
 
 
-
+window.close();
 
 
 
