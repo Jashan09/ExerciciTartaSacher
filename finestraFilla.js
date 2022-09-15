@@ -14,8 +14,6 @@ function crearRajolaDeXocolata(){
         console.log(coordenadaX);
         console.log(coordenadaY);
 
-
-
         let textProva = "";
 
         for (let x = 0; x < coordenadaX; x++) {
@@ -50,17 +48,32 @@ function crearRajolaDeXocolata(){
         let boolProva = pecesEnUnaSolaXocolata;
 
 
+
+
+        if(totalPecesDemanades<boolProva){
+            console.log("no entra");
+            paragrafFinal.innerText += textProva;
+        }
+
+
+        if(totalPecesDemanades>boolProva){
+
+
+            //9 9 9
+
         do{
             textProva += "\n";
             textProva += xocolataFinal;
             paragrafFinal.innerText += textProva;
             boolProva += pecesEnUnaSolaXocolata;
+            console.log("Entra");
         }while(totalPecesDemanades>boolProva);
 
-        console.log('arriba');
+        }
 
+
+        console.log("final")
         console.log(textProva);
-
 
         let pecesQueSobren = totalPecesDemanades-pecesEnUnaSolaXocolata;
 
@@ -69,11 +82,16 @@ function crearRajolaDeXocolata(){
 
 
         textInfo.innerText += "Vols " + totalPecesDemanades
-            + " peces amb rajoles de " + coordenadaX + "x" + coordenadaY;
+            + " peces amb rajoles de " + coordenadaX + "x" + coordenadaY + " (" + pecesEnUnaSolaXocolata + " peces en una sola rajola)";
 
 
 
-window.close();
+        console.log("final2")
+        console.log(xocolataFinal);
+
+
+
+//window.close();
 
 
 

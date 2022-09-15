@@ -15,4 +15,13 @@ Necessites 3 rajoles de 2 (n) x 3 (m)
 
 
 
+
+el pare.js és més llarg que el
+el fill.js.
+
+Al fill.js donarà les coordenades
+al pare.js i aquest dibuixarà les
+rajoles de xocolata necessaries
+
+
  */
