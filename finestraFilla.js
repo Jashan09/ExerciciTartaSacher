@@ -60,6 +60,11 @@ function crearRajolaDeXocolata(){
         console.log(textProva);
 
 
+        let pecesQueSobren = totalPecesDemanades-pecesEnUnaSolaXocolata;
+
+        let textInfo = finestraPare.document.getElementById("textInfo");
+        textInfo.innerText += "Vols " + totalPecesDemanades
+            + " peces amb rajoles de " + coordenadaX + "x" + coordenadaY;
 
 
 
